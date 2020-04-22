@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+    <script>
+        /*
+        0 1 2 3 4 5 6 7 8 9
+        1 2 3 4 5 6 7 8 9
+        2 3 4 5 6 7 8 9
+        3 4 5 6 7 8 9
+        4 5 6 7 8 9
+        5 6 7 8 9
+        6 7 8 9
+        7 8 9
+        8 9
+        9
+        */
+        for(var i = 0; i <= 9; i++) {
+            var str = "";
+            for(var j = i + 1; j<= 9; j++) {
+                str += j + "&nbsp;";
+            }
+            document.writeln(i +"&nbsp;" + str + "<br />");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

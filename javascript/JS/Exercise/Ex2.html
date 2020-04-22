@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+    <script>
+        /*
+                  0
+                1 0 1
+              2 1 0 1 2
+            3 2 1 0 1 2 3
+          4 3 2 1 0 1 2 3 4
+        5 4 3 2 1 0 1 2 3 4 5
+        */
+        function number_triangle(n) {
+            var i;
+            var str = "";
+            var result = ""
+            for(i = 0; i <= n; i++) {
+                var j = 0;
+                var space = "";
+                while( j < n - i ) {
+                    space += "&nbsp;&nbsp;&nbsp;";
+                    j++;
+                }
+                if(i == 0) str = i.toString();
+                else str = i + "&nbsp;" + str +"&nbsp;" + i
+                result += space + str + '<br />';
+            }
+            return result;
+        }
+        var test = number_triangle(9)
+        document.write(test)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
